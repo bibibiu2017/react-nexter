@@ -4,7 +4,7 @@ import HomeView from "./views/Home/HomeView";
 function App() {
   return (
     <div>
-      <HomeView />
+      <HomeView/>
     </div>
   );
 }

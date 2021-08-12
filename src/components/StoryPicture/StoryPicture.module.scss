@@ -1,0 +1,23 @@
+.picture {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+}
+
+
+.img--1 {
+  width: 100%;
+  grid-column: 2 / -2;
+  grid-row: 2 / -2;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+}
+
+.img--2 {
+  z-index: 20;
+  width: 115%;
+  grid-column: 4 / -1;
+  grid-row: 4 / -1;
+  align-self: start;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .3);
+}

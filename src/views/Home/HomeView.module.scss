@@ -33,18 +33,19 @@
 
 .story {
   &__pictures {
-    background-color: $color-primary;
+    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../../assets/img/back.jpg);
     grid-column: full-start / col-end 4;
   }
 
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+
+    padding: 6rem 8vw; //dynamic padding based on view port width;
   }
 }
 
 .homes {
-  background-color: $color-secondary;
   grid-column: center-start / center-end;
 }
 
