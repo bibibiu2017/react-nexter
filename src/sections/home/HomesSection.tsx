@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HomesSection.module.scss";
-import HomeCard from "../../components/HomeCard/HomeCard";
+import HomeCard from "../../components/cards/HomeCard";
 import { homes } from "../../data/HomesData";
 
 type Props = {} & React.HTMLAttributes<HTMLDivElement>;
