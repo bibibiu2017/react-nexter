@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./views/Home/Home";
+import HomeView from "./views/Home/HomeView";
 
 function App() {
   return (
     <div>
-      <Home />
+      <HomeView />
     </div>
   );
 }
