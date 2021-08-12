@@ -5,6 +5,7 @@ import FeaturesSection from "../../sections/features/FeaturesSection";
 import StoryContent from "../../components/story/StoryContent";
 import StoryPicture from "../../components/story/StoryPicture";
 import HomesSection from "../../sections/home/HomesSection";
+import GallerySection from "../../sections/gallery/GallerySection";
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const HomeView: React.FC<Props> = () => {
       <StoryPicture className={styles.story__pictures}>Pictures</StoryPicture>
       <StoryContent className={styles.story__content} />
       <HomesSection className={styles.homes} />
-      <section className={styles.gallery}>Gallery</section>
+      <GallerySection className={styles.gallery}>Gallery</GallerySection>
       <div className={styles.footer}>Footer</div>
     </Container>
   );
