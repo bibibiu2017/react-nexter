@@ -7,13 +7,14 @@ import StoryPicture from "../../components/story/StoryPicture";
 import HomesSection from "../../sections/home/HomesSection";
 import GallerySection from "../../sections/gallery/GallerySection";
 import FooterSection from "../../sections/footer/FooterSection";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 type Props = {};
 
 const HomeView: React.FC<Props> = () => {
   return (
     <Container className={styles.container}>
-      <div className={styles.sidebar}>Sidebar</div>
+      <Sidebar className={styles.sidebar} />
       <header className={styles.header}>Header</header>
       <div className={styles.realtors}>Top 3 realtors</div>
       <FeaturesSection className={styles.features} />
