@@ -9,6 +9,7 @@ import GallerySection from "../../sections/gallery/GallerySection";
 import FooterSection from "../../sections/footer/FooterSection";
 import Sidebar from "../../components/sidebar/Sidebar";
 import HeaderSection from "../../sections/header/HeaderSection";
+import Realtors from "../../components/realtors/Realtors";
 
 type Props = React.HTMLAttributes<HTMLDivElement>;
 
@@ -17,7 +18,7 @@ const HomeView: React.FC<Props> = () => {
     <Container className={styles.container}>
       <Sidebar className={styles.sidebar} />
       <HeaderSection className={styles.header} />
-      <div className={styles.realtors}>Top 3 realtors</div>
+      <Realtors className={styles.realtors} />
       <FeaturesSection className={styles.features} />
       <StoryPicture className={styles.story__pictures}>Pictures</StoryPicture>
       <StoryContent className={styles.story__content} />
