@@ -16,6 +16,12 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+//RESPONSIVE BREAKS
+$bp-xl: 75em; //1200px
+$bp-lg: 62.5em; //1000px
+$bp-md: 50em; //800px
+$bp-sm: 37.5em; //600px
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -25,6 +31,10 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-xl) {
+    font-size: 50%; //1rem = 8px
+  }
 }
 
 body {

@@ -7,11 +7,15 @@
   background-size: cover;
 
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
 
   grid-row-gap: 1.5rem;
   padding: 4rem 8rem 8rem;
+
+  @media only screen and (max-width: $bp-sm) {
+    padding: 5rem;
+  }
 
   &__logo {
     height: 3rem;
@@ -51,7 +55,8 @@
 
     img {
       display: block;
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%; //Image scaling
       filter: brightness(70%); //darken images
     }
   }

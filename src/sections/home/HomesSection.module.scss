@@ -1,5 +1,11 @@
+@import "src/index";
+
 .homes {
   margin: 15rem 0;
+
+  @media only screen and (max-width: $bp-sm) {
+    margin: 4rem 0;
+  }
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
