@@ -8,14 +8,15 @@ import HomesSection from "../../sections/home/HomesSection";
 import GallerySection from "../../sections/gallery/GallerySection";
 import FooterSection from "../../sections/footer/FooterSection";
 import Sidebar from "../../components/sidebar/Sidebar";
+import HeaderSection from "../../sections/header/HeaderSection";
 
-type Props = {};
+type Props = React.HTMLAttributes<HTMLDivElement>;
 
 const HomeView: React.FC<Props> = () => {
   return (
     <Container className={styles.container}>
       <Sidebar className={styles.sidebar} />
-      <header className={styles.header}>Header</header>
+      <HeaderSection className={styles.header} />
       <div className={styles.realtors}>Top 3 realtors</div>
       <FeaturesSection className={styles.features} />
       <StoryPicture className={styles.story__pictures}>Pictures</StoryPicture>

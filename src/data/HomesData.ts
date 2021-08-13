@@ -20,7 +20,7 @@ const homes: Home[] = [
     rooms: 5,
     image: {
       path: "house-1.jpeg",
-      description: "House 1",
+      alt: "House 1",
     },
   },
   {
@@ -32,7 +32,7 @@ const homes: Home[] = [
     rooms: 6,
     image: {
       path: "house-2.jpeg",
-      description: "House 2",
+      alt: "House 2",
     },
   },
   {
@@ -44,7 +44,7 @@ const homes: Home[] = [
     price: "$850,000",
     image: {
       path: "house-3.jpeg",
-      description: "House 3",
+      alt: "House 3",
     },
   },
   {
@@ -56,7 +56,7 @@ const homes: Home[] = [
     price: "$1,950,000",
     image: {
       path: "house-4.jpeg",
-      description: "House 4",
+      alt: "House 4",
     },
   },
   {
@@ -68,7 +68,7 @@ const homes: Home[] = [
     price: "$9,500,000",
     image: {
       path: "house-5.jpeg",
-      description: "House 5",
+      alt: "House 5",
     },
   },
   {
@@ -80,7 +80,7 @@ const homes: Home[] = [
     price: "$600,000",
     image: {
       path: "house-6.jpeg",
-      description: "House 6",
+      alt: "House 6",
     },
   },
 ];

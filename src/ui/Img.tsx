@@ -2,16 +2,16 @@ import React from "react";
 
 type ImgType = {
   path: string;
-  description: string;
+  alt: string;
 };
 
 type Props = ImgType & React.HTMLAttributes<HTMLImageElement>;
 
-const Img: React.FC<Props> = ({ path, description, children, ...props }) => {
+const Img: React.FC<Props> = ({ path, alt, children, ...props }) => {
   const imgSrc = require("../assets/img/" + path).default;
 
   return (
-    <img src={imgSrc} alt={description} {...props}>
+    <img src={imgSrc} alt={alt} {...props}>
       {children}
     </img>
   );

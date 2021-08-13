@@ -12,13 +12,12 @@
 }
 
 .sidebar {
-  background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
 }
 
 .header {
-  background-color: $color-grey-dark-1;
+  justify-content: center;
   grid-column: full-start / col-end 6;
 }
 
@@ -33,15 +32,11 @@
 
 .story {
   &__pictures {
-    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../../assets/img/back.jpg);
     grid-column: full-start / col-end 4;
   }
 
   &__content {
-    background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
-
-    padding: 6rem 8vw; //dynamic padding based on view port width;
   }
 }
 
@@ -50,11 +45,9 @@
 }
 
 .gallery {
-  background-color: $color-grey-light-1;
   grid-column: full-start / full-end;
 }
 
 .footer {
-  background-color: $color-secondary;
   grid-column: full-start / full-end;
 }

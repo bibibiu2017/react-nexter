@@ -1,3 +1,5 @@
+@import "src/index";
+
 .content {
 
   //using flex-box
@@ -11,6 +13,9 @@
   align-content: center;
   justify-items: start;
 
+  padding: 6rem 8vw; //dynamic padding based on view port width;
+
+  background-color: $color-grey-light-1;
 
   &__text {
     font-size: 1.5rem;

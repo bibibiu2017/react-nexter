@@ -12,11 +12,7 @@ const HomeCard: React.FC<Props> = ({ className, ...props }) => {
   return (
     <div className={styles.card}>
       <div {...props} className={classes}>
-        <Img
-          path={image.path}
-          description={image.description}
-          className={styles.home__img}
-        />
+        <Img path={image.path} alt={image.alt} className={styles.home__img} />
         <Svg name={"icon-heart-full"} className={styles.home__like} />
         <h5 className={styles.home__name}>{name}</h5>
         <div className={styles.home__location}>

@@ -1,0 +1,58 @@
+@import "src/index";
+
+.header {
+  background-color: $color-grey-dark-1;
+  //Multiple backgrounds to make the image darker
+  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url("../../assets/img/hero.jpeg");
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+
+  grid-row-gap: 1.5rem;
+  padding: 4rem 8rem 8rem;
+
+  &__logo {
+    height: 3rem;
+    justify-self: center;
+  }
+
+  &__btn {
+    justify-self: start;
+    align-self: start;
+  }
+
+  &__seen-on-text {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+
+    filter: brightness(70%); //darken images
+
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before, &:after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__seen-on-logos {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 4rem;
+    justify-items: center;
+
+    img {
+      display: block;
+      height: 2.5rem;
+      filter: brightness(70%); //darken images
+    }
+  }
+}

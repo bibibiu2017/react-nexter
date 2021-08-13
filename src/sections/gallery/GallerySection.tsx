@@ -11,15 +11,11 @@ const GallerySection: React.FC<Props> = ({ className, ...props }) => {
 
   return (
     <div className={classes} {...props}>
-      {gallery.map(({ path, description }, index) => {
+      {gallery.map(({ path, alt }, index) => {
         const galleryItemClass = styles[`gallery__item--${index + 1}`];
         return (
           <figure className={`${figureClass} ${galleryItemClass}`} key={path}>
-            <Img
-              path={path}
-              description={description}
-              className={styles.gallery__img}
-            />
+            <Img path={path} alt={alt} className={styles.gallery__img} />
           </figure>
         );
       })}
